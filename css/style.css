@@ -60,6 +60,7 @@ li {
 .btn {
     border: 1px solid;
     border-radius: 3px;
+    text-align: center;
 }
 
 /* HEADER */
@@ -94,18 +95,28 @@ header {
     color: white;
 }
 
+.header-list li a:hover {
+    color: rgb(207, 149, 40);
+}
+
 .header-list li {
     font-size: 1.6rem;
     font-weight: 500;
     margin-left: 1rem;
 }
 
-input {
+#searchbar {
     height: 30px;
+    width: 200px;
     padding: 1rem .5rem;
     border: 1px solid #6a93c1;
     box-shadow: inset 1px 1px grey;
     margin-right: 2rem;
+    transition: width 1s ease-in;
+}
+
+#searchbar:hover {
+    width: 400px;
 }
 
 /* MAIN */
@@ -120,6 +131,10 @@ input {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.col-60 a:hover {
+    text-decoration: underline;
 }
 
 .col-60 h1 {
@@ -138,6 +153,11 @@ input {
     border: none;
     color: white;
     padding: .7rem 1.5rem;
+}
+
+.download-btn:hover {
+    background-color: rgb(28, 87, 28);
+    cursor: pointer;
 }
 
 .col-40{
@@ -171,6 +191,12 @@ input {
     margin-left: 1rem;
 }
 
+.dvlp-btn:hover {
+    background-color: white;
+    color: var(--grey);
+    cursor: pointer
+}
+
 /* FOOTER */
 footer {
     height: 100px;
@@ -189,3 +215,6 @@ footer {
     font-size: .8rem;
 }
 
+.footer-nav li:hover {
+    text-decoration: underline;
+}
