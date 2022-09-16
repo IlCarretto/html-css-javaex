@@ -20,11 +20,6 @@ html {
     --grey: #7a736e;
 }
 
-i {
-    font-size: 3rem;
-    color: white;
-}
-
 a {
     text-decoration: none;
     color: unset;
@@ -108,15 +103,31 @@ header {
 #searchbar {
     height: 30px;
     width: 200px;
-    padding: 1rem .5rem;
+    padding: 1rem 0;
     border: 1px solid #6a93c1;
     box-shadow: inset 1px 1px grey;
     margin-right: 2rem;
     transition: width 1s ease-in;
+    text-align: center;
 }
 
 #searchbar:hover {
     width: 400px;
+}
+
+.search {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey);
+    height: 100%;
 }
 
 /* MAIN */
@@ -182,6 +193,11 @@ header {
 
 .col-50 h2 {
     margin-left: .5rem;
+}
+
+.developer-sec i {
+    font-size: 3rem;
+    color: white;
 }
 
 .dvlp-btn {
