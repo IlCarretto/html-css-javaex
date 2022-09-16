@@ -39,6 +39,11 @@ li {
     margin: 0 auto;
 }
 
+.container-60 {
+    width: 60%;
+    margin: 0 auto;
+}
+
 /* UTILITIES */
 .mt {
     margin-top: 1rem;
@@ -53,9 +58,8 @@ li {
 }
 
 .btn {
-    padding: .7rem 1.5rem;
     border: 1px solid;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 /* HEADER */
@@ -115,6 +119,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .col-60 h1 {
@@ -132,6 +137,7 @@ input {
     background-color: var(--green);
     border: none;
     color: white;
+    padding: .7rem 1.5rem;
 }
 
 .col-40{
@@ -140,12 +146,29 @@ input {
 
 /* Developer-Section */
 .developer-sec {
+    display: flex;
+    align-items: center;
     height: 100px;
-    background-color: var(--grey);
+    background-color: var(--grey)
 }
 
 .col-50 {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 2);
+    color: white;
+}
+
+.col-50 h2 {
+    margin-left: .5rem;
+}
+
+.dvlp-btn {
+    background-color: var(--grey);
+    color: white;
+    padding: .7rem .5rem;
+    margin-left: 1rem;
 }
 
 /* FOOTER */
@@ -155,7 +178,14 @@ footer {
 }
 
 .footer-nav ul{
+    height: 100px;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
+.footer-nav li {
+    color: var(--blue);
+    font-size: .8rem;
+}
 
